@@ -1,0 +1,25 @@
+var searchData=
+[
+  ['u16_0',['u16',['../group__types.html#ga80cbf427faf0b7a93498e083e93390d7',1,'corelib']]],
+  ['u16_5fmax_1',['u16_max',['../group__types.html#ga35af9bce9bcc4b1b7a3c504f72881f80',1,'corelib']]],
+  ['u16_5fmin_2',['u16_min',['../group__types.html#gabeb29d9cf86f0a2702372fcb1887d155',1,'corelib']]],
+  ['u32_3',['u32',['../group__types.html#ga8fa6dfafc74b9c43b0a0a4d58c2fefde',1,'corelib']]],
+  ['u32_5fmax_4',['u32_max',['../group__types.html#gaf743aa7237f9798789c5d692ac53f4f0',1,'corelib']]],
+  ['u32_5fmin_5',['u32_min',['../group__types.html#ga8dcba28fed399aea2e5b2f2c15d1d255',1,'corelib']]],
+  ['u64_6',['u64',['../group__types.html#ga106117b69aacb185ea8ae85c0003fa0e',1,'corelib']]],
+  ['u64_5fmax_7',['u64_max',['../group__types.html#ga69c5e70ab7fb485ee3392e238876dd72',1,'corelib']]],
+  ['u64_5fmin_8',['u64_min',['../group__types.html#ga0164e2cd0dfff4bf4ba1e438c9c2a4a2',1,'corelib']]],
+  ['u8_9',['u8',['../group__types.html#ga3cb370cf1d0ce9e457549f15290d03f1',1,'corelib']]],
+  ['u8_5fmax_10',['u8_max',['../group__types.html#ga7cec4651d43334e278b59d9f5ba30ef5',1,'corelib']]],
+  ['u8_5fmin_11',['u8_min',['../group__types.html#ga0bd6b2760d2643b5e948789d656433e6',1,'corelib']]],
+  ['underlyingt_12',['UnderlyingT',['../classcorelib_1_1is__integral__or__enum.html#aeaaa80720dfb77584df9d8d5ae67adfc',1,'corelib::is_integral_or_enum']]],
+  ['unique_5fdyn_5fcast_13',['unique_dyn_cast',['../group__casting.html#ga1b6434dfe4978d4921d20eecf9959c36',1,'corelib::unique_dyn_cast(std::unique_ptr&lt; Y &gt; &amp;Val)'],['../namespacecorelib.html#aac4a4863f86ade1c8f9e3b7cf5a5f5f1',1,'corelib::unique_dyn_cast(std::unique_ptr&lt; Y &gt; &amp;&amp;Val)']]],
+  ['unique_5fdyn_5fcast_5for_5fnull_14',['unique_dyn_cast_or_null',['../group__casting.html#ga90e00c9795d47bfe31f4bf1a1a3aac6f',1,'corelib::unique_dyn_cast_or_null(std::unique_ptr&lt; Y &gt; &amp;Val)'],['../namespacecorelib.html#a6ba87a9d9f2ec01ce96042af88df2918',1,'corelib::unique_dyn_cast_or_null(std::unique_ptr&lt; Y &gt; &amp;&amp;Val)']]],
+  ['uniqueptrcast_15',['UniquePtrCast',['../structcorelib_1_1detail_1_1UniquePtrCast.html',1,'corelib::detail']]],
+  ['unwrappedtype_16',['unwrappedtype',['../structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html#a65cd50e78374af0e93d3b3716ff30957',1,'corelib::detail::ValueIsPresent&lt; T, std::enable_if_t&lt; detail::IsNullable&lt; T &gt; &gt; &gt;::UnwrappedType'],['../structcorelib_1_1detail_1_1ValueIsPresent_3_01std_1_1optional_3_01T_01_4_01_4.html#a0336a879b05a5f5bdaac4d0560a03c33',1,'corelib::detail::ValueIsPresent&lt; std::optional&lt; T &gt; &gt;::UnwrappedType'],['../structcorelib_1_1detail_1_1ValueIsPresent.html#a55c2bc09eeb71597fcfaac173a10f25c',1,'corelib::detail::ValueIsPresent::UnwrappedType']]],
+  ['unwrapvalue_17',['unwrapvalue',['../structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html#a5c5cb71004ffbf01bb4a4047f1b4a187',1,'corelib::detail::ValueIsPresent&lt; T, std::enable_if_t&lt; detail::IsNullable&lt; T &gt; &gt; &gt;::UnwrapValue()'],['../structcorelib_1_1detail_1_1ValueIsPresent_3_01std_1_1optional_3_01T_01_4_01_4.html#a77711f5c2d528516ae7cab283aefc4cd',1,'corelib::detail::ValueIsPresent&lt; std::optional&lt; T &gt; &gt;::UnwrapValue()'],['../structcorelib_1_1detail_1_1ValueIsPresent.html#a41d172b943039df431c1e3ecc98eb7b2',1,'corelib::detail::ValueIsPresent::UnwrapValue()'],['../group__casting__detail.html#gac9a65a7cf30b59a490faf6bc1080f099',1,'corelib::detail::unwrapValue()']]],
+  ['usage_18',['usage',['../group__utility.html#autotoc_md88',1,'Usage'],['../group__types.html#autotoc_md83',1,'Usage'],['../group__type__traits.html#autotoc_md72',1,'Usage'],['../group__extensible-rtti.html#autotoc_md58',1,'Usage'],['../group__casting.html#autotoc_md7',1,'Usage']]],
+  ['utilities_19',['RAII Utilities',['../group__utility.html#autotoc_md87',1,'']]],
+  ['utility_20module_20',['Utility Module',['../group__utility.html',1,'']]],
+  ['utility_2ehxx_21',['utility.hxx',['../utility_8hxx.html',1,'']]]
+];

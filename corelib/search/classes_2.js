@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['castconvertval_0',['CastConvertVal',['../structcorelib_1_1detail_1_1CastConvertVal.html',1,'corelib::detail']]],
+  ['castconvertval_3c_20to_2c_20fromty_20_2a_2c_20fromty_20_2a_20_3e_1',['CastConvertVal&lt; To, FromTy *, FromTy * &gt;',['../structcorelib_1_1detail_1_1CastConvertVal_3_01To_00_01FromTy_01_5_00_01FromTy_01_5_01_4.html',1,'corelib::detail']]],
+  ['castconvertval_3c_20to_2c_20fromty_2c_20fromty_20_3e_2',['CastConvertVal&lt; To, FromTy, FromTy &gt;',['../structcorelib_1_1detail_1_1CastConvertVal_3_01To_00_01FromTy_00_01FromTy_01_4.html',1,'corelib::detail']]],
+  ['castfunc_3',['CastFunc',['../structcorelib_1_1detail_1_1CastFunc.html',1,'corelib::detail']]],
+  ['castifpresentfunc_4',['CastIfPresentFunc',['../structcorelib_1_1detail_1_1CastIfPresentFunc.html',1,'corelib::detail']]],
+  ['castinfo_5',['CastInfo',['../structcorelib_1_1detail_1_1CastInfo.html',1,'corelib::detail']]],
+  ['castinfo_3c_20to_2c_20from_2c_20std_3a_3aenable_5fif_5ft_3c_21issimpletype_3c_20from_20_3e_3a_3avalue_20_3e_20_3e_6',['CastInfo&lt; To, From, std::enable_if_t&lt;!IsSimpleType&lt; From &gt;::value &gt; &gt;',['../structcorelib_1_1detail_1_1CastInfo_3_01To_00_01From_00_01std_1_1enable__if__t_3_9IsSimpleType_3_01From_01_4_1_1value_01_4_01_4.html',1,'corelib::detail']]],
+  ['castinfo_3c_20to_2c_20std_3a_3aoptional_3c_20from_20_3e_20_3e_7',['CastInfo&lt; To, std::optional&lt; From &gt; &gt;',['../structcorelib_1_1detail_1_1CastInfo_3_01To_00_01std_1_1optional_3_01From_01_4_01_4.html',1,'corelib::detail']]],
+  ['castinfo_3c_20to_2c_20std_3a_3aunique_5fptr_3c_20from_20_3e_20_3e_8',['CastInfo&lt; To, std::unique_ptr&lt; From &gt; &gt;',['../structcorelib_1_1detail_1_1CastInfo_3_01To_00_01std_1_1unique__ptr_3_01From_01_4_01_4.html',1,'corelib::detail']]],
+  ['castispossible_9',['CastIsPossible',['../structcorelib_1_1detail_1_1CastIsPossible.html',1,'corelib::detail']]],
+  ['castispossible_3c_20to_2c_20from_20_2a_20_3e_10',['CastIsPossible&lt; To, From * &gt;',['../structcorelib_1_1detail_1_1CastIsPossible.html',1,'corelib::detail']]],
+  ['castispossible_3c_20to_2c_20from_20_3e_11',['CastIsPossible&lt; To, From &gt;',['../structcorelib_1_1detail_1_1CastIsPossible.html',1,'corelib::detail']]],
+  ['castispossible_3c_20to_2c_20from_2c_20std_3a_3aenable_5fif_5ft_3c_20std_3a_3ais_5fbase_5fof_5fv_3c_20to_2c_20from_20_3e_20_3e_20_3e_12',['CastIsPossible&lt; To, From, std::enable_if_t&lt; std::is_base_of_v&lt; To, From &gt; &gt; &gt;',['../structcorelib_1_1detail_1_1CastIsPossible_3_01To_00_01From_00_01std_1_1enable__if__t_3_01std_1_13035afbf33027b5f9ca245b90dd094bb.html',1,'corelib::detail']]],
+  ['castispossible_3c_20to_2c_20std_3a_3aoptional_3c_20from_20_3e_20_3e_13',['CastIsPossible&lt; To, std::optional&lt; From &gt; &gt;',['../structcorelib_1_1detail_1_1CastIsPossible_3_01To_00_01std_1_1optional_3_01From_01_4_01_4.html',1,'corelib::detail']]],
+  ['castretty_14',['CastRetty',['../structcorelib_1_1detail_1_1CastRetty.html',1,'corelib::detail']]],
+  ['castrettyimpl_15',['CastRettyImpl',['../structcorelib_1_1detail_1_1CastRettyImpl.html',1,'corelib::detail']]],
+  ['castrettyimpl_3c_20to_2c_20const_20from_20_2a_20_3e_16',['CastRettyImpl&lt; To, const From * &gt;',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_5_01_4.html',1,'corelib::detail']]],
+  ['castrettyimpl_3c_20to_2c_20const_20from_20_2aconst_20_3e_17',['CastRettyImpl&lt; To, const From *const &gt;',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_5const_01_4.html',1,'corelib::detail']]],
+  ['castrettyimpl_3c_20to_2c_20const_20from_20_3e_18',['CastRettyImpl&lt; To, const From &gt;',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_4.html',1,'corelib::detail']]],
+  ['castrettyimpl_3c_20to_2c_20from_20_2a_20_3e_19',['CastRettyImpl&lt; To, From * &gt;',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01From_01_5_01_4.html',1,'corelib::detail']]],
+  ['castrettyimpl_3c_20to_2c_20std_3a_3aunique_5fptr_3c_20from_20_3e_20_3e_20',['CastRettyImpl&lt; To, std::unique_ptr&lt; From &gt; &gt;',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01std_1_1unique__ptr_3_01From_01_4_01_4.html',1,'corelib::detail']]],
+  ['castrettywrap_21',['CastRettyWrap',['../structcorelib_1_1detail_1_1CastRettyWrap.html',1,'corelib::detail']]],
+  ['castrettywrap_3c_20to_2c_20fromty_2c_20fromty_20_3e_22',['CastRettyWrap&lt; To, FromTy, FromTy &gt;',['../structcorelib_1_1detail_1_1CastRettyWrap_3_01To_00_01FromTy_00_01FromTy_01_4.html',1,'corelib::detail']]],
+  ['const_5fpointer_5for_5fconst_5fref_23',['const_pointer_or_const_ref',['../structcorelib_1_1const__pointer__or__const__ref.html',1,'corelib']]],
+  ['conststrippingforwardingcast_24',['ConstStrippingForwardingCast',['../structcorelib_1_1detail_1_1ConstStrippingForwardingCast.html',1,'corelib::detail']]]
+];

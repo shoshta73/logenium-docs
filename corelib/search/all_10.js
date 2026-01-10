@@ -1,0 +1,14 @@
+var searchData=
+[
+  ['raii_20utilities_0',['RAII Utilities',['../group__utility.html#autotoc_md87',1,'']]],
+  ['rationale_1',['Rationale',['../group__types.html#autotoc_md84',1,'']]],
+  ['recurring_20template_20pattern_2',['CRTP (Curiously Recurring Template Pattern)',['../group__extensible-rtti.html#autotoc_md66',1,'']]],
+  ['reference_20handling_3',['Reference Handling',['../group__type__traits.html#autotoc_md70',1,'']]],
+  ['releaser_4',['releaser',['../classcorelib_1_1AutoRelease.html#a7a759ac5a99fd5ad5b025a19f9bc6474',1,'corelib::AutoRelease']]],
+  ['requirements_5',['Requirements',['../group__casting.html#autotoc_md6',1,'']]],
+  ['reset_6',['Reset',['../classcorelib_1_1AutoRelease.html#a7e481475b58432b7d6fc5ae5e8978655',1,'corelib::AutoRelease']]],
+  ['resulttype_7',['ResultType',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01std_1_1unique__ptr_3_01From_01_4_01_4.html#a8f63e57cfb770efd7710385d72661bbe',1,'corelib::detail::CastRettyImpl&lt; To, std::unique_ptr&lt; From &gt; &gt;']]],
+  ['ret_5ftype_8',['ret_type',['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_5const_01_4.html#acdb91cab436462f6eead9bcfb354e1ff',1,'corelib::detail::CastRettyImpl&lt; To, const From *const &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01std_1_1unique__ptr_3_01From_01_4_01_4.html#a8d895b35600038555231d877f3927b2a',1,'corelib::detail::CastRettyImpl&lt; To, std::unique_ptr&lt; From &gt; &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRettyWrap.html#a7b6691dea5d8c027e0d5dfb34ea73e29',1,'corelib::detail::CastRettyWrap::ret_type'],['../structcorelib_1_1detail_1_1CastRettyWrap_3_01To_00_01FromTy_00_01FromTy_01_4.html#a54057bf3c938bf87bc2622b136f3106a',1,'corelib::detail::CastRettyWrap&lt; To, FromTy, FromTy &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRetty.html#a2c456cc12672282cbcbe50d251485b13',1,'corelib::detail::CastRetty::ret_type'],['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_5_01_4.html#ac08270cb308a49882d8810744406e258',1,'corelib::detail::CastRettyImpl&lt; To, const From * &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01From_01_5_01_4.html#a345f73a704af3cbea4c591311dd99b1b',1,'corelib::detail::CastRettyImpl&lt; To, From * &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRettyImpl_3_01To_00_01const_01From_01_4.html#aee9300f28f28acd3b6392d0ab9bb6db1',1,'corelib::detail::CastRettyImpl&lt; To, const From &gt;::ret_type'],['../structcorelib_1_1detail_1_1CastRettyImpl.html#a5647f60c4155d010d3efbcce16304576',1,'corelib::detail::CastRettyImpl::ret_type']]],
+  ['rettype_9',['RetType',['../structcorelib_1_1detail_1_1SimplifyType_3_01const_01From_01_4.html#a53e0bbad55aaeb98b77ac7d93d285a3c',1,'corelib::detail::SimplifyType&lt; const From &gt;']]],
+  ['rtti_20module_10',['Extensible RTTI Module',['../group__extensible-rtti.html',1,'']]]
+];

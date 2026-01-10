@@ -1,0 +1,6 @@
+var structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4 =
+[
+    [ "UnwrappedType", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html#a65cd50e78374af0e93d3b3716ff30957", null ],
+    [ "IsPresent", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html#a1e74f3b6b46dd19b4ffcba72c50bd36f", null ],
+    [ "UnwrapValue", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html#a5c5cb71004ffbf01bb4a4047f1b4a187", null ]
+];
