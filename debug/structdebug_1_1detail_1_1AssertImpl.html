@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('structdebug_1_1detail_1_1AssertImpl.ht
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a904b402cc0fc854314942778b69687b4" id="r_a904b402cc0fc854314942778b69687b4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdebug_1_1detail_1_1AssertImpl.html#a904b402cc0fc854314942778b69687b4">AssertImpl</a> (bool predicate, std::format_string&lt; Args... &gt; format, Args &amp;&amp;...args, std::source_location location=std::source_location::current(), const std::stacktrace &amp;stacktrace=std::stacktrace::current())</td></tr>
-<tr class="memdesc:a904b402cc0fc854314942778b69687b4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for debug builds using standard library formatting.  <br /></td></tr>
-<tr class="separator:a904b402cc0fc854314942778b69687b4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af48a2126d4aa299743adfa4a0ffd6117" id="r_af48a2126d4aa299743adfa4a0ffd6117"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdebug_1_1detail_1_1AssertImpl.html#af48a2126d4aa299743adfa4a0ffd6117">AssertImpl</a> (bool predicate, fmt::format_string&lt; Args... &gt; format, Args &amp;&amp;...args, std::source_location location=std::source_location::current(), const std::stacktrace &amp;stacktrace=std::stacktrace::current())</td></tr>
+<tr class="memdesc:af48a2126d4aa299743adfa4a0ffd6117"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for debug builds using fmtlib formatting.  <br /></td></tr>
+<tr class="separator:af48a2126d4aa299743adfa4a0ffd6117"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;typename... Args&gt;<br />
@@ -133,8 +133,8 @@ struct debug::detail::AssertImpl&lt; Args &gt;</div><p>Implementation class for 
 <dl class="section note"><dt>Note</dt><dd>This is an implementation detail. Use <code><a class="el" href="group__debug.html#ga3d67274039a14c014deacb51040acd3b" title="Runtime assertion with formatted messages, source location, and stack traces.">debug::Assert</a></code> instead.</dd></dl>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__debug.html#ga3d67274039a14c014deacb51040acd3b" title="Runtime assertion with formatted messages, source location, and stack traces.">Assert</a> for the public API </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a904b402cc0fc854314942778b69687b4" name="a904b402cc0fc854314942778b69687b4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a904b402cc0fc854314942778b69687b4">&#9670;&#160;</a></span>AssertImpl()</h2>
+<a id="af48a2126d4aa299743adfa4a0ffd6117" name="af48a2126d4aa299743adfa4a0ffd6117"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af48a2126d4aa299743adfa4a0ffd6117">&#9670;&#160;</a></span>AssertImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -153,7 +153,7 @@ template&lt;typename... Args&gt; </div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">std::format_string&lt; Args... &gt;&#160;</td>
+          <td class="paramtype">fmt::format_string&lt; Args... &gt;&#160;</td>
           <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
@@ -187,12 +187,12 @@ template&lt;typename... Args&gt; </div>
 </table>
 </div><div class="memdoc">
 
-<p>Constructor for debug builds using standard library formatting. </p>
-<p>Evaluates the predicate and, if false, prints diagnostic information and aborts.</p>
+<p>Constructor for debug builds using fmtlib formatting. </p>
+<p>Evaluates the predicate and, if false, prints diagnostic information and aborts. This version uses fmtlib for formatting and optionally colored output.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">predicate</td><td>The condition to check </td></tr>
-    <tr><td class="paramname">format</td><td>Format string (std::format_string) </td></tr>
+    <tr><td class="paramname">format</td><td>Format string (fmt::format_string) </td></tr>
     <tr><td class="paramname">args</td><td>Arguments for the format string </td></tr>
     <tr><td class="paramname">location</td><td>Source location (automatically captured) </td></tr>
     <tr><td class="paramname">stacktrace</td><td>Stack trace (automatically captured)</td></tr>
@@ -200,19 +200,19 @@ template&lt;typename... Args&gt; </div>
   </dd>
 </dl>
 <p>Diagnostic output includes:</p><ul>
-<li>Formatted assertion message</li>
+<li>Formatted assertion message (with red background if <b>LOGENIUM_DEBUG_USE_COLOR_LOGS</b>)</li>
 <li>Source file, line, and function name</li>
 <li>Full stack trace (reversed for readability, unless <b>LOGENIUM_DEBUG_USE_FAST_STACKTRACE</b>)</li>
 </ul>
 <p>If predicate is false:</p><ol type="1">
-<li>Prints diagnostics to stderr</li>
+<li>Prints diagnostics to stderr (with color if enabled)</li>
 <li>Calls <a class="el" href="group__debug.html#gafe3e9201167c10ae6307648dc9f18d18" title="Checks whether the process is currently running under a debugger.">IsDebuggerPresent()</a></li>
 <li>Calls <a class="el" href="group__debug.html#ga68232c18b497bd8c492f3094d2957991" title="Triggers a debugger breakpoint unconditionally (debug builds only).">Breakpoint()</a> if a debugger is attached (otherwise calls std::abort()) </li>
 </ol>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="structdebug_1_1detail_1_1AssertImpl_a904b402cc0fc854314942778b69687b4_cgraph.svg" width="438" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="structdebug_1_1detail_1_1AssertImpl_af48a2126d4aa299743adfa4a0ffd6117_cgraph.svg" width="438" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 
 </div>

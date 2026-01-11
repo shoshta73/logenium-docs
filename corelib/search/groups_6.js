@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['utility_20module_0',['Utility Module',['../group__utility.html',1,'']]]
+  ['utilities_0',['Mathematical Utilities',['../group__math.html',1,'']]],
+  ['utility_20module_1',['Utility Module',['../group__utility.html',1,'']]]
 ];

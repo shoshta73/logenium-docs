@@ -1,5 +1,6 @@
 var level_8hxx =
 [
+    [ "fmt::formatter< logging::Level >", "structfmt_1_1formatter_3_01logging_1_1Level_01_4.html", "structfmt_1_1formatter_3_01logging_1_1Level_01_4" ],
     [ "std::formatter< logging::Level >", "structstd_1_1formatter_3_01logging_1_1Level_01_4.html", "structstd_1_1formatter_3_01logging_1_1Level_01_4" ],
     [ "Level", "level_8hxx.html#gabafe9a6237f10c83f3558a6fee6577b7", [
       [ "Ignore", "level_8hxx.html#ggabafe9a6237f10c83f3558a6fee6577b7afd038fc7f319e48f3115d92bf5bdbef9", null ],

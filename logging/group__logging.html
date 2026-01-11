@@ -102,21 +102,20 @@ $(document).ready(function(){initNavTree('group__logging.html',''); initResizabl
 <div class="dynheader">
 Collaboration diagram for Logging Module:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="group__logging.svg" width="419" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="group__logging.svg" width="419" height="86"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="groups" name="groups"></a>
 Modules</h2></td></tr>
+<tr class="memitem:group__logging__utils" id="r_group__logging__utils"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging__utils.html">Logging Utilities</a></td></tr>
+<tr class="memdesc:group__logging__utils"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal utility functions for the logging module. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:group__logging__internal" id="r_group__logging__internal"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__logging__internal.html">Logging Internal Implementation</a></td></tr>
 <tr class="memdesc:group__logging__internal"><td class="mdescLeft">&#160;</td><td class="mdescRight">Internal implementation details for the logging module. <br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga806a7f83110df8c7d73847b6f3118b11" id="r_ga806a7f83110df8c7d73847b6f3118b11"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ga806a7f83110df8c7d73847b6f3118b11"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a> = <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">detail::LogImpl</a>&lt; <a class="el" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875">Level::Info</a>, Args... &gt;</td></tr>
-<tr class="memdesc:ga806a7f83110df8c7d73847b6f3118b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for Info-level logging with compile-time validation.  <br /></td></tr>
-<tr class="separator:ga806a7f83110df8c7d73847b6f3118b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf033af698f579c4de04998b65f16182" id="r_gadf033af698f579c4de04998b65f16182"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:gadf033af698f579c4de04998b65f16182"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging.html#gadf033af698f579c4de04998b65f16182">logging::trace3</a> = <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">detail::LogImpl</a>&lt; <a class="el" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7ad3f3ce3d9a0d6ed81ca2fb0f71797e8c">Level::Trace3</a>, Args... &gt;</td></tr>
 <tr class="memdesc:gadf033af698f579c4de04998b65f16182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for Trace3-level logging (most verbose trace)  <br /></td></tr>
@@ -196,7 +195,7 @@ Usage</h2>
 <p>Basic logging with automatic type deduction and level selection: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="logging_8hxx.html">logging/logging.hxx</a>&gt;</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Default Info level</span></div>
-<div class="line"><a class="code hl_typedef" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a>(<span class="stringliteral">&quot;Hello, {}!&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);</div>
+<div class="line">logging::log(<span class="stringliteral">&quot;Hello, {}!&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);</div>
 <div class="line"><span class="comment">// Output: [Info] Hello, world! (file.cxx:42 in main)</span></div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Level-specific logging</span></div>
@@ -206,11 +205,10 @@ Usage</h2>
 <div class="line"><a class="code hl_typedef" href="group__logging.html#ga77cb4e3063b52d9826b27e44f1dc3c3c">logging::fatal</a>(<span class="stringliteral">&quot;Fatal error: {}&quot;</span>, critical_error);</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// All levels: trace3, trace2, trace1, trace, debug, info, warn, error, fatal</span></div>
-<div class="ttc" id="agroup__logging_html_ga0d4898696b803f78025f172f76a50109"><div class="ttname"><a href="group__logging.html#ga0d4898696b803f78025f172f76a50109">logging::warn</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Warn, Args... &gt; warn</div><div class="ttdoc">Type alias for Warn-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:279</div></div>
-<div class="ttc" id="agroup__logging_html_ga0e945a61cbb7c9a671b4255fee457359"><div class="ttname"><a href="group__logging.html#ga0e945a61cbb7c9a671b4255fee457359">logging::error</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Error, Args... &gt; error</div><div class="ttdoc">Type alias for Error-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:287</div></div>
-<div class="ttc" id="agroup__logging_html_ga77cb4e3063b52d9826b27e44f1dc3c3c"><div class="ttname"><a href="group__logging.html#ga77cb4e3063b52d9826b27e44f1dc3c3c">logging::fatal</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Fatal, Args... &gt; fatal</div><div class="ttdoc">Type alias for Fatal-level logging (highest severity)</div><div class="ttdef"><b>Definition</b> logging.hxx:295</div></div>
-<div class="ttc" id="agroup__logging_html_ga806a7f83110df8c7d73847b6f3118b11"><div class="ttname"><a href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Info, Args... &gt; log</div><div class="ttdoc">Type alias for Info-level logging with compile-time validation.</div><div class="ttdef"><b>Definition</b> logging.hxx:223</div></div>
-<div class="ttc" id="agroup__logging_html_gacf25a1a73755618cfaa0682189ace5b1"><div class="ttname"><a href="group__logging.html#gacf25a1a73755618cfaa0682189ace5b1">logging::debug</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Debug, Args... &gt; debug</div><div class="ttdoc">Type alias for Debug-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:263</div></div>
+<div class="ttc" id="agroup__logging_html_ga0d4898696b803f78025f172f76a50109"><div class="ttname"><a href="group__logging.html#ga0d4898696b803f78025f172f76a50109">logging::warn</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Warn, Args... &gt; warn</div><div class="ttdoc">Type alias for Warn-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:210</div></div>
+<div class="ttc" id="agroup__logging_html_ga0e945a61cbb7c9a671b4255fee457359"><div class="ttname"><a href="group__logging.html#ga0e945a61cbb7c9a671b4255fee457359">logging::error</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Error, Args... &gt; error</div><div class="ttdoc">Type alias for Error-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:218</div></div>
+<div class="ttc" id="agroup__logging_html_ga77cb4e3063b52d9826b27e44f1dc3c3c"><div class="ttname"><a href="group__logging.html#ga77cb4e3063b52d9826b27e44f1dc3c3c">logging::fatal</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Fatal, Args... &gt; fatal</div><div class="ttdoc">Type alias for Fatal-level logging (highest severity)</div><div class="ttdef"><b>Definition</b> logging.hxx:226</div></div>
+<div class="ttc" id="agroup__logging_html_gacf25a1a73755618cfaa0682189ace5b1"><div class="ttname"><a href="group__logging.html#gacf25a1a73755618cfaa0682189ace5b1">logging::debug</a></div><div class="ttdeci">detail::LogImpl&lt; Level::Debug, Args... &gt; debug</div><div class="ttdoc">Type alias for Debug-level logging.</div><div class="ttdef"><b>Definition</b> logging.hxx:194</div></div>
 <div class="ttc" id="alogging_8hxx_html"><div class="ttname"><a href="logging_8hxx.html">logging.hxx</a></div><div class="ttdoc">Header-only logging utility with compile-time format string validation.</div></div>
 </div><!-- fragment --><h2><a class="anchor" id="autotoc_md2"></a>
 Output Format</h2>
@@ -313,40 +311,6 @@ template&lt;typename... Args&gt; </div>
   </table>
   </dd>
 </dl>
-
-</div>
-</div>
-<a id="ga806a7f83110df8c7d73847b6f3118b11" name="ga806a7f83110df8c7d73847b6f3118b11"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ga806a7f83110df8c7d73847b6f3118b11">&#9670;&#160;</a></span>log</h2>
-
-<div class="memitem">
-<div class="memproto">
-<div class="memtemplate">
-template&lt;typename... Args&gt; </div>
-      <table class="memname">
-        <tr>
-          <td class="memname">using <a class="el" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a> = typedef <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">detail::LogImpl</a>&lt;<a class="el" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875">Level::Info</a>, Args...&gt;</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Type alias for Info-level logging with compile-time validation. </p>
-<p>This alias template provides a convenient interface for Info-level logging. Outputs with format: <code>[Info] message (<a href="file:line">file:line</a> in function)</code></p>
-<dl class="tparams"><dt>Template Parameters</dt><dd>
-  <table class="tparams">
-    <tr><td class="paramname">Args</td><td>Variadic template parameter pack for format arguments</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Example usage: </p><div class="fragment"><div class="line"><a class="code hl_typedef" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a>(<span class="stringliteral">&quot;Hello, {}!&quot;</span>, <span class="stringliteral">&quot;world&quot;</span>);</div>
-<div class="line"><a class="code hl_typedef" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a>(<span class="stringliteral">&quot;Value: {}&quot;</span>, 42);</div>
-<div class="line"><a class="code hl_typedef" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a>(<span class="stringliteral">&quot;Multiple: {}, {}&quot;</span>, 1, 2);</div>
-<div class="line"><span class="comment">// Output: [Info] Hello, world! (main.cxx:42 in main)</span></div>
-</div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>The template parameters are automatically deduced via CTAD </dd>
-<dd>
-Format strings are validated at compile time </dd>
-<dd>
-Source location is automatically captured and displayed </dd></dl>
 
 </div>
 </div>
@@ -499,7 +463,7 @@ Use format specifier <code>{:d}</code> for debug mode (shows enum name and under
 <div class="fragment"><div class="line"><a class="code hl_enumeration" href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">logging::Level</a> level = <a class="code hl_enumvalue" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875">logging::Level::Info</a>;</div>
 <div class="line">std::format(<span class="stringliteral">&quot;{}&quot;</span>, level);    <span class="comment">// Output: &quot;Info&quot;</span></div>
 <div class="line">std::format(<span class="stringliteral">&quot;{:d}&quot;</span>, level);  <span class="comment">// Output: &quot;logging::Level( Info, 6 )&quot;</span></div>
-<div class="ttc" id="agroup__logging_html_gabafe9a6237f10c83f3558a6fee6577b7"><div class="ttname"><a href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">logging::Level</a></div><div class="ttdeci">Level</div><div class="ttdoc">Logging severity levels.</div><div class="ttdef"><b>Definition</b> level.hxx:40</div></div>
+<div class="ttc" id="agroup__logging_html_gabafe9a6237f10c83f3558a6fee6577b7"><div class="ttname"><a href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">logging::Level</a></div><div class="ttdeci">Level</div><div class="ttdoc">Logging severity levels.</div><div class="ttdef"><b>Definition</b> level.hxx:37</div></div>
 <div class="ttc" id="agroup__logging_html_ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875"><div class="ttname"><a href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875">logging::Level::Info</a></div><div class="ttdeci">@ Info</div><div class="ttdoc">Info level.</div></div>
 </div><!-- fragment --> <table class="fieldtable">
 <tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ggabafe9a6237f10c83f3558a6fee6577b7afd038fc7f319e48f3115d92bf5bdbef9" name="ggabafe9a6237f10c83f3558a6fee6577b7afd038fc7f319e48f3115d92bf5bdbef9"></a>Ignore&#160;</td><td class="fielddoc"><p>Ignore level - lowest priority. </p>

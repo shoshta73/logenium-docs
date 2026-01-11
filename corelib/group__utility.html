@@ -127,20 +127,20 @@ Functions</h2></td></tr>
 <li><b>Generic wrappers</b>: Adapters for managing C-style resources with custom cleanup</li>
 </ul>
 <p>All utilities are designed to be zero-cost abstractions that leverage C++23 features like constexpr evaluation, perfect forwarding, and move semantics.</p>
-<h2><a class="anchor" id="autotoc_md85"></a>
+<h2><a class="anchor" id="autotoc_md95"></a>
 Components</h2>
-<h3><a class="anchor" id="autotoc_md86"></a>
+<h3><a class="anchor" id="autotoc_md96"></a>
 Type Introspection</h3>
 <ul>
 <li><code>type_name&lt;T&gt;()</code>: Extract type names at compile time for debugging and diagnostics</li>
 </ul>
-<h3><a class="anchor" id="autotoc_md87"></a>
+<h3><a class="anchor" id="autotoc_md97"></a>
 RAII Utilities</h3>
 <ul>
 <li><code>Defer</code>: Execute arbitrary code at scope exit (like Go's defer or D's scope(exit))</li>
 <li><code>AutoRelease</code>: Manage resources with custom releasers (file descriptors, handles, etc.)</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md88"></a>
+<h2><a class="anchor" id="autotoc_md98"></a>
 Usage</h2>
 <p>Include the convenience header to get all utilities: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="utility_8hxx.html">corelib/utility.hxx</a>&gt;</span></div>
 <div class="ttc" id="autility_8hxx_html"><div class="ttname"><a href="utility_8hxx.html">utility.hxx</a></div><div class="ttdoc">Convenience header for all utility module components.</div></div>
@@ -240,11 +240,11 @@ template&lt;<a class="el" href="group__casting.html#ga21d42fef17770f4f775ad655ab
 The value parameter is not evaluated, only used for type deduction </dd>
 <dd>
 Reference qualifiers are stripped, but cv-qualifiers are preserved</dd></dl>
-<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">x</a> = 42;</div>
-<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">y</a> = 10;</div>
-<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name1</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">x</a>);  <span class="comment">// Returns &quot;int&quot;</span></div>
-<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name2</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">y</a>);  <span class="comment">// Returns &quot;int&quot; (const is part of type, not reference)</span></div>
-<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name3</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(std::move(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">x</a>));  <span class="comment">// Returns &quot;int&quot;</span></div>
+<p>Example: </p><div class="fragment"><div class="line"><span class="keywordtype">int</span> x = 42;</div>
+<div class="line"><span class="keyword">const</span> <span class="keywordtype">int</span> y = 10;</div>
+<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name1</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(x);  <span class="comment">// Returns &quot;int&quot;</span></div>
+<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name2</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(y);  <span class="comment">// Returns &quot;int&quot; (const is part of type, not reference)</span></div>
+<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">name3</a> = <a class="code hl_function" href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">type_name</a>(std::move(x));  <span class="comment">// Returns &quot;int&quot;</span></div>
 <div class="ttc" id="agroup__utility_html_gac24e683d07e76a05c5491d91d32f7557"><div class="ttname"><a href="group__utility.html#gac24e683d07e76a05c5491d91d32f7557">corelib::type_name</a></div><div class="ttdeci">constexpr std::string_view type_name()</div><div class="ttdoc">Extract the type name of a template parameter at compile time.</div><div class="ttdef"><b>Definition</b> type_name.hxx:32</div></div>
 </div><!-- fragment --><dl class="todo"><dt><b><a class="el" href="todo.html#_todo000001">Todo:</a></b></dt><dd>Implement not stripping reference qualifiers </dd></dl>
 

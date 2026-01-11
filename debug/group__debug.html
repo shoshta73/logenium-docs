@@ -190,7 +190,7 @@ template&lt;typename... Args&gt; </div>
 <h2><a class="anchor" id="autotoc_md5"></a>
 Usage</h2>
 <p>Assertions are created using brace initialization syntax: </p><div class="fragment"><div class="line"><a class="code hl_struct" href="structdebug_1_1detail_1_1AssertImpl.html">debug::Assert</a>{condition, <span class="stringliteral">&quot;format string&quot;</span>, args...};</div>
-<div class="ttc" id="astructdebug_1_1detail_1_1AssertImpl_html"><div class="ttname"><a href="structdebug_1_1detail_1_1AssertImpl.html">debug::detail::AssertImpl</a></div><div class="ttdoc">Implementation class for runtime assertions with formatted messages and diagnostics.</div><div class="ttdef"><b>Definition</b> assert.hxx:84</div></div>
+<div class="ttc" id="astructdebug_1_1detail_1_1AssertImpl_html"><div class="ttname"><a href="structdebug_1_1detail_1_1AssertImpl.html">debug::detail::AssertImpl</a></div><div class="ttdoc">Implementation class for runtime assertions with formatted messages and diagnostics.</div><div class="ttdef"><b>Definition</b> assert.hxx:77</div></div>
 </div><!-- fragment --><p>The assertion checks <code>condition</code> and, if false:</p><ol type="1">
 <li>Prints the formatted message with source location and stack trace</li>
 <li>Calls <code><a class="el" href="group__debug.html#gab10ae5d61410609b63c15a98f9fe938b" title="Triggers a debugger breakpoint only if a debugger is currently attached.">BreakpointIfDebugging()</a></code> to break if a debugger is attached</li>

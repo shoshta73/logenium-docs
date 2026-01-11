@@ -30,7 +30,7 @@
 <!-- Node2 -->
 <g id="Node000002" class="node">
 <title>Node2</title>
-<g id="a_Node000002"><a xlink:href="structdebug_1_1detail_1_1AssertImpl.html#a904b402cc0fc854314942778b69687b4" target="_top" xlink:title="Constructor for debug builds using standard library formatting.">
+<g id="a_Node000002"><a xlink:href="structdebug_1_1detail_1_1AssertImpl.html#af48a2126d4aa299743adfa4a0ffd6117" target="_top" xlink:title="Constructor for debug builds using fmtlib formatting.">
 <polygon fill="white" stroke="#666666" points="152,-67.5 13,-67.5 13,-37.5 152,-37.5 152,-67.5"/>
 <text text-anchor="start" x="21" y="-55.5" font-family="Helvetica,sans-Serif" font-size="10.00">debug::detail::AssertImpl</text>
 <text text-anchor="middle" x="82.5" y="-44.5" font-family="Helvetica,sans-Serif" font-size="10.00">::AssertImpl</text>

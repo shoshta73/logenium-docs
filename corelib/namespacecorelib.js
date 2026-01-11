@@ -1,6 +1,7 @@
 var namespacecorelib =
 [
     [ "detail", "namespacecorelib_1_1detail.html", "namespacecorelib_1_1detail" ],
+    [ "math", "namespacecorelib_1_1math.html", "namespacecorelib_1_1math" ],
     [ "rtti", "namespacecorelib_1_1rtti.html", "namespacecorelib_1_1rtti" ],
     [ "add_const_past_pointer", "structcorelib_1_1add__const__past__pointer.html", "structcorelib_1_1add__const__past__pointer" ],
     [ "add_lvalue_reference_if_not_pointer", "structcorelib_1_1add__lvalue__reference__if__not__pointer.html", "structcorelib_1_1add__lvalue__reference__if__not__pointer" ],

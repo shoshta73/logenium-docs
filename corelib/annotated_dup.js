@@ -53,6 +53,12 @@ var annotated_dup =
         [ "ValueIsPresent< std::optional< T > >", "structcorelib_1_1detail_1_1ValueIsPresent_3_01std_1_1optional_3_01T_01_4_01_4.html", "structcorelib_1_1detail_1_1ValueIsPresent_3_01std_1_1optional_3_01T_01_4_01_4" ],
         [ "ValueIsPresent< T, std::enable_if_t< detail::IsNullable< T > > >", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4" ]
       ] ],
+      [ "math", "namespacecorelib_1_1math.html", [
+        [ "vec1", "structcorelib_1_1math_1_1vec1.html", "structcorelib_1_1math_1_1vec1" ],
+        [ "vec2", "structcorelib_1_1math_1_1vec2.html", "structcorelib_1_1math_1_1vec2" ],
+        [ "vec3", "structcorelib_1_1math_1_1vec3.html", "structcorelib_1_1math_1_1vec3" ],
+        [ "vec4", "structcorelib_1_1math_1_1vec4.html", "structcorelib_1_1math_1_1vec4" ]
+      ] ],
       [ "rtti", "namespacecorelib_1_1rtti.html", [
         [ "Base", "classcorelib_1_1rtti_1_1Base.html", "classcorelib_1_1rtti_1_1Base" ],
         [ "Extends", "classcorelib_1_1rtti_1_1Extends.html", "classcorelib_1_1rtti_1_1Extends" ]

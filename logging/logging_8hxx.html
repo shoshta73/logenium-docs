@@ -101,13 +101,16 @@ $(document).ready(function(){initNavTree('logging_8hxx.html',''); initResizable(
 <p>Header-only logging utility with compile-time format string validation.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;source_location&gt;</code><br />
-<code>#include &lt;format&gt;</code><br />
-<code>#include &lt;print&gt;</code><br />
+<code>#include &lt;fmt/base.h&gt;</code><br />
+<code>#include &lt;fmt/color.h&gt;</code><br />
+<code>#include &lt;fmt/format.h&gt;</code><br />
+<code>#include &lt;debug/tracing/macros.hxx&gt;</code><br />
+<code>#include &lt;<a class="el" href="to__color_8hxx_source.html">logging/internal/utils/to_color.hxx</a>&gt;</code><br />
 <code>#include &lt;<a class="el" href="level_8hxx_source.html">logging/level.hxx</a>&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for logging.hxx:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="logging_8hxx__incl.svg" width="630" height="183"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="logging_8hxx__incl.svg" width="100%" height="503"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div>
 <p><a href="logging_8hxx_source.html">Go to the source code of this file.</a></p>
@@ -127,10 +130,6 @@ Namespaces</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:ga806a7f83110df8c7d73847b6f3118b11" id="r_ga806a7f83110df8c7d73847b6f3118b11"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
-<tr class="memitem:ga806a7f83110df8c7d73847b6f3118b11"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11">logging::log</a> = <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">detail::LogImpl</a>&lt; <a class="el" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7a4059b0251f66a18cb56f544728796875">Level::Info</a>, Args... &gt;</td></tr>
-<tr class="memdesc:ga806a7f83110df8c7d73847b6f3118b11"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for Info-level logging with compile-time validation.  <br /></td></tr>
-<tr class="separator:ga806a7f83110df8c7d73847b6f3118b11"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:gadf033af698f579c4de04998b65f16182" id="r_gadf033af698f579c4de04998b65f16182"><td class="memTemplParams" colspan="2">template&lt;typename... Args&gt; </td></tr>
 <tr class="memitem:gadf033af698f579c4de04998b65f16182"><td class="memTemplItemLeft" align="right" valign="top">using&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging.html#gadf033af698f579c4de04998b65f16182">logging::trace3</a> = <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">detail::LogImpl</a>&lt; <a class="el" href="group__logging.html#ggabafe9a6237f10c83f3558a6fee6577b7ad3f3ce3d9a0d6ed81ca2fb0f71797e8c">Level::Trace3</a>, Args... &gt;</td></tr>
 <tr class="memdesc:gadf033af698f579c4de04998b65f16182"><td class="mdescLeft">&#160;</td><td class="mdescRight">Type alias for Trace3-level logging (most verbose trace)  <br /></td></tr>
@@ -170,10 +169,10 @@ Typedefs</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:ga897985eabfaefddacec5e1807899b7fe" id="r_ga897985eabfaefddacec5e1807899b7fe"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">Level</a> L = Level::Ignore, typename... Args&gt; </td></tr>
-<tr class="memitem:ga897985eabfaefddacec5e1807899b7fe"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging__internal.html#ga897985eabfaefddacec5e1807899b7fe">logging::detail::LogImpl</a> (bool, std::format_string&lt; Args... &gt;, Args &amp;&amp;...) -&gt; <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">LogImpl</a>&lt; L, Args... &gt;</td></tr>
-<tr class="memdesc:ga897985eabfaefddacec5e1807899b7fe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for <a class="el" href="structlogging_1_1detail_1_1LogImpl.html" title="Implementation struct for compile-time validated logging.">LogImpl</a> with standard library backend.  <br /></td></tr>
-<tr class="separator:ga897985eabfaefddacec5e1807899b7fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga348954905eee318da71f6cc5571e3219" id="r_ga348954905eee318da71f6cc5571e3219"><td class="memTemplParams" colspan="2">template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">Level</a> L = Level::Ignore, typename... Args&gt; </td></tr>
+<tr class="memitem:ga348954905eee318da71f6cc5571e3219"><td class="memTemplItemLeft" align="right" valign="top">&#160;</td><td class="memTemplItemRight" valign="bottom"><a class="el" href="group__logging__internal.html#ga348954905eee318da71f6cc5571e3219">logging::detail::LogImpl</a> (fmt::format_string&lt; Args... &gt;, Args &amp;&amp;...) -&gt; <a class="el" href="structlogging_1_1detail_1_1LogImpl.html">LogImpl</a>&lt; L, Args... &gt;</td></tr>
+<tr class="memdesc:ga348954905eee318da71f6cc5571e3219"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deduction guide for <a class="el" href="structlogging_1_1detail_1_1LogImpl.html" title="Implementation struct for compile-time validated logging.">LogImpl</a> with fmtlib backend.  <br /></td></tr>
+<tr class="separator:ga348954905eee318da71f6cc5571e3219"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Header-only logging utility with compile-time format string validation. </p>

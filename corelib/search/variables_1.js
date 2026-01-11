@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['dyncastifpresentto_0',['DynCastIfPresentTo',['../group__casting.html#gae38b7141d43c63bbf98dba5117817c63',1,'corelib']]],
-  ['dyncastto_1',['DynCastTo',['../group__casting.html#ga8f1f69d74a19cd9b40a2cca4e98b1651',1,'corelib']]]
+  ['b_0',['b',['../structcorelib_1_1math_1_1vec3.html#a51e1d7342ac8a84cf81b202fabfaa2b7',1,'corelib::math::vec3::b'],['../structcorelib_1_1math_1_1vec4.html#a190df4dc9c1c777d8bda3326a49db817',1,'corelib::math::vec4::b']]]
 ];

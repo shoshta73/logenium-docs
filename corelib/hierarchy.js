@@ -64,8 +64,8 @@ var hierarchy =
     [ "corelib::detail::NullableValueCastFailed< To >", "structcorelib_1_1detail_1_1NullableValueCastFailed.html", [
       [ "corelib::detail::ValueFromPointerCast< To, From, Derived >", "structcorelib_1_1detail_1_1ValueFromPointerCast.html", null ]
     ] ],
-    [ "ParentType", null, [
-      [ "corelib::rtti::Extends< ThisType, ParentType, ParentTypes >", "classcorelib_1_1rtti_1_1Extends.html", null ]
+    [ "ParentT", null, [
+      [ "corelib::rtti::Extends< ThisT, ParentT, ParentTs >", "classcorelib_1_1rtti_1_1Extends.html", null ]
     ] ],
     [ "corelib::detail::SimplifyType< From >", "structcorelib_1_1detail_1_1SimplifyType.html", null ],
     [ "corelib::detail::SimplifyType< const From >", "structcorelib_1_1detail_1_1SimplifyType_3_01const_01From_01_4.html", null ],
@@ -73,7 +73,11 @@ var hierarchy =
     [ "corelib::detail::ValueIsPresent< T, Enable >", "structcorelib_1_1detail_1_1ValueIsPresent.html", null ],
     [ "corelib::detail::ValueIsPresent< std::optional< T > >", "structcorelib_1_1detail_1_1ValueIsPresent_3_01std_1_1optional_3_01T_01_4_01_4.html", null ],
     [ "corelib::detail::ValueIsPresent< T, std::enable_if_t< detail::IsNullable< T > > >", "structcorelib_1_1detail_1_1ValueIsPresent_3_01T_00_01std_1_1enable__if__t_3_01detail_1_1IsNullable_3_01T_01_4_01_4_01_4.html", null ],
-    [ "corelib::rtti::ParentTypes", null, [
-      [ "corelib::rtti::Extends< ThisType, ParentType, ParentTypes >", "classcorelib_1_1rtti_1_1Extends.html", null ]
+    [ "corelib::math::vec1< T >", "structcorelib_1_1math_1_1vec1.html", null ],
+    [ "corelib::math::vec2< T >", "structcorelib_1_1math_1_1vec2.html", null ],
+    [ "corelib::math::vec3< T >", "structcorelib_1_1math_1_1vec3.html", null ],
+    [ "corelib::math::vec4< T >", "structcorelib_1_1math_1_1vec4.html", null ],
+    [ "corelib::rtti::ParentTs", null, [
+      [ "corelib::rtti::Extends< ThisT, ParentT, ParentTs >", "classcorelib_1_1rtti_1_1Extends.html", null ]
     ] ]
 ];

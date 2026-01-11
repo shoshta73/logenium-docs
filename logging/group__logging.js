@@ -1,11 +1,11 @@
 var group__logging =
 [
+    [ "Logging Utilities", "group__logging__utils.html", "group__logging__utils" ],
     [ "Logging Internal Implementation", "group__logging__internal.html", "group__logging__internal" ],
     [ "logging::debug", "group__logging.html#gacf25a1a73755618cfaa0682189ace5b1", null ],
     [ "logging::error", "group__logging.html#ga0e945a61cbb7c9a671b4255fee457359", null ],
     [ "logging::fatal", "group__logging.html#ga77cb4e3063b52d9826b27e44f1dc3c3c", null ],
     [ "logging::info", "group__logging.html#ga3fd8f02cb37cf61cc066ff556150f9ce", null ],
-    [ "logging::log", "group__logging.html#ga806a7f83110df8c7d73847b6f3118b11", null ],
     [ "logging::trace", "group__logging.html#ga43383b30525f0dbd6ccaa2772e4dc766", null ],
     [ "logging::trace1", "group__logging.html#ga82a66e5c743ec641d69d5e7619a71e0b", null ],
     [ "logging::trace2", "group__logging.html#ga3cdcd2febc346a67a3e56c28733dbc26", null ],

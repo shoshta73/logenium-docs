@@ -103,9 +103,9 @@ $(document).ready(function(){initNavTree('structlogging_1_1detail_1_1LogImpl.htm
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a4604daa7b4958ab5f8b3b6a00b7d5276" id="r_a4604daa7b4958ab5f8b3b6a00b7d5276"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogging_1_1detail_1_1LogImpl.html#a4604daa7b4958ab5f8b3b6a00b7d5276">LogImpl</a> (std::format_string&lt; Args... &gt; format, Args &amp;&amp;...args, std::source_location location=std::source_location::current())</td></tr>
-<tr class="memdesc:a4604daa7b4958ab5f8b3b6a00b7d5276"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and execute a log operation using standard library.  <br /></td></tr>
-<tr class="separator:a4604daa7b4958ab5f8b3b6a00b7d5276"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2460cfe5489b8b144d6682d4af09c353" id="r_a2460cfe5489b8b144d6682d4af09c353"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structlogging_1_1detail_1_1LogImpl.html#a2460cfe5489b8b144d6682d4af09c353">LogImpl</a> (fmt::format_string&lt; Args... &gt; format, Args &amp;&amp;...args, std::source_location location=std::source_location::current())</td></tr>
+<tr class="memdesc:a2460cfe5489b8b144d6682d4af09c353"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct and execute a log operation using fmtlib.  <br /></td></tr>
+<tr class="separator:a2460cfe5489b8b144d6682d4af09c353"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><div class="compoundTemplParams">template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee6577b7">Level</a> L, typename... Args&gt;<br />
@@ -118,10 +118,10 @@ struct logging::detail::LogImpl&lt; L, Args &gt;</div><p>Implementation struct f
   </table>
   </dd>
 </dl>
-<dl class="section note"><dt>Note</dt><dd>This is an implementation detail. Users should use the <a class="el" href="group__logging.html#ga806a7f83110df8c7d73847b6f3118b11" title="Type alias for Info-level logging with compile-time validation.">logging::log</a> family of alias templates instead of instantiating <a class="el" href="structlogging_1_1detail_1_1LogImpl.html" title="Implementation struct for compile-time validated logging.">LogImpl</a> directly. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>This is an implementation detail. Users should use the logging::log family of alias templates instead of instantiating <a class="el" href="structlogging_1_1detail_1_1LogImpl.html" title="Implementation struct for compile-time validated logging.">LogImpl</a> directly. </dd></dl>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a4604daa7b4958ab5f8b3b6a00b7d5276" name="a4604daa7b4958ab5f8b3b6a00b7d5276"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4604daa7b4958ab5f8b3b6a00b7d5276">&#9670;&#160;</a></span>LogImpl()</h2>
+<a id="a2460cfe5489b8b144d6682d4af09c353" name="a2460cfe5489b8b144d6682d4af09c353"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2460cfe5489b8b144d6682d4af09c353">&#9670;&#160;</a></span>LogImpl()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -134,7 +134,7 @@ template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee
         <tr>
           <td class="memname"><a class="el" href="structlogging_1_1detail_1_1LogImpl.html">logging::detail::LogImpl</a>&lt; L, Args &gt;::LogImpl </td>
           <td>(</td>
-          <td class="paramtype">std::format_string&lt; Args... &gt;&#160;</td>
+          <td class="paramtype">fmt::format_string&lt; Args... &gt;&#160;</td>
           <td class="paramname"><em>format</em>, </td>
         </tr>
         <tr>
@@ -162,11 +162,11 @@ template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee
 </table>
 </div><div class="memdoc">
 
-<p>Construct and execute a log operation using standard library. </p>
-<p>Validates the format string at compile time and outputs the formatted message to stdout using std::println with the format: <code>[Level] message (<a href="file:line">file:line</a> in function)</code></p>
+<p>Construct and execute a log operation using fmtlib. </p>
+<p>Validates the format string at compile time and outputs the formatted message to stdout using fmt::println with the format: <code>[Level] message (<a href="file:line">file:line</a> in function)</code></p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">format</td><td>Format string with compile-time validation (std::format_string) </td></tr>
+    <tr><td class="paramname">format</td><td>Format string with compile-time validation (fmt::format_string) </td></tr>
     <tr><td class="paramname">args</td><td>Variadic arguments to be formatted (forwarded) </td></tr>
     <tr><td class="paramname">location</td><td>Source location for debugging (automatically captured)</td></tr>
   </table>
@@ -175,6 +175,11 @@ template&lt;<a class="el" href="group__logging.html#gabafe9a6237f10c83f3558a6fee
 <dl class="section note"><dt>Note</dt><dd>Arguments are perfectly forwarded to avoid unnecessary copies </dd>
 <dd>
 Source location is automatically captured and displayed in output </dd></dl>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="structlogging_1_1detail_1_1LogImpl_a2460cfe5489b8b144d6682d4af09c353_cgraph.svg" width="370" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 
 </div>
 </div>

@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['_7eautorelease_0',['~AutoRelease',['../classcorelib_1_1AutoRelease.html#ab2d6417625344d50a399837e251180a5',1,'corelib::AutoRelease']]],
-  ['_7ebase_1',['~Base',['../classcorelib_1_1rtti_1_1Base.html#aebe332eb908659e9b87ffc4b0b0eebd9',1,'corelib::rtti::Base']]],
-  ['_7edefer_2',['~Defer',['../structcorelib_1_1Defer.html#afb9867c87bcacb01517e73493d0eae06',1,'corelib::Defer']]]
+  ['type_5fname_0',['type_name',['../group__utility.html#gac24e683d07e76a05c5491d91d32f7557',1,'corelib::type_name()'],['../group__utility.html#ga43a32d577d23e32368394673b286ada8',1,'corelib::type_name(T &amp;&amp;value)']]],
+  ['typeid_1',['typeid',['../classcorelib_1_1rtti_1_1Base.html#a1abfd8c8a18b170bafda1fd1750e0304',1,'corelib::rtti::Base::TypeID()'],['../classcorelib_1_1rtti_1_1Extends.html#a253e8d8a1935741a85b258fd809b1ecf',1,'corelib::rtti::Extends::TypeID()']]]
 ];

@@ -3,13 +3,13 @@ var indexSectionsWithContent =
   0: "defilmnoptuw",
   1: "fl",
   2: "l",
-  3: "l",
-  4: "flp",
+  3: "lt",
+  4: "flpt",
   5: "d",
-  6: "defiltw",
+  6: "defitw",
   7: "l",
   8: "defitw",
-  9: "ilm"
+  9: "ilmu"
 };
 
 var indexSectionNames =

@@ -157,15 +157,15 @@ Requires To to be constructible from From </dd>
 <dd>
 Uses CRTP pattern via SelfType for customization</dd></dl>
 <p>Example: </p><div class="fragment"><div class="line"><span class="comment">// Suppose we have types where Derived constructs from Base</span></div>
-<div class="line">Base <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">b</a> = ...;</div>
+<div class="line">Base b = ...;</div>
 <div class="line"> </div>
-<div class="line"><span class="keywordflow">if</span> (<a class="code hl_struct" href="structcorelib_1_1detail_1_1OptionalValueCast.html">OptionalValueCast&lt;Derived, Base&gt;::IsPossible</a>(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">b</a>)) {</div>
-<div class="line">    <span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">opt</a> = <a class="code hl_function" href="structcorelib_1_1detail_1_1OptionalValueCast.html#aee1920199d213f2d01a041d0755e4e7a">OptionalValueCast&lt;Derived, Base&gt;::DoCast</a>(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">b</a>);</div>
+<div class="line"><span class="keywordflow">if</span> (<a class="code hl_struct" href="structcorelib_1_1detail_1_1OptionalValueCast.html">OptionalValueCast&lt;Derived, Base&gt;::IsPossible</a>(b)) {</div>
+<div class="line">    <span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">opt</a> = <a class="code hl_function" href="structcorelib_1_1detail_1_1OptionalValueCast.html#aee1920199d213f2d01a041d0755e4e7a">OptionalValueCast&lt;Derived, Base&gt;::DoCast</a>(b);</div>
 <div class="line">    <span class="comment">// opt contains Derived(b)</span></div>
 <div class="line">}</div>
 <div class="line"> </div>
 <div class="line"><span class="comment">// Or use DoCastIfPossible</span></div>
-<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">result</a> = <a class="code hl_function" href="structcorelib_1_1detail_1_1DefaultDoCastIfPossible.html#a91348def46d438c466605c0d2644a949">OptionalValueCast&lt;Derived, Base&gt;::DoCastIfPossible</a>(<a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">b</a>);</div>
+<div class="line"><span class="keyword">auto</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">result</a> = <a class="code hl_function" href="structcorelib_1_1detail_1_1DefaultDoCastIfPossible.html#a91348def46d438c466605c0d2644a949">OptionalValueCast&lt;Derived, Base&gt;::DoCastIfPossible</a>(b);</div>
 <div class="line"><span class="comment">// result is either std::optional&lt;Derived&gt;{Derived(b)} or std::nullopt</span></div>
 <div class="ttc" id="agroup__casting_html_ga21d42fef17770f4f775ad655ab85e2b8"><div class="ttname"><a href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">corelib::isa</a></div><div class="ttdeci">bool isa(const From &amp;Val)</div><div class="ttdoc">Checks if a value is an instance of any of the specified types.</div><div class="ttdef"><b>Definition</b> isa.hxx:64</div></div>
 <div class="ttc" id="astructcorelib_1_1detail_1_1DefaultDoCastIfPossible_html_a91348def46d438c466605c0d2644a949"><div class="ttname"><a href="structcorelib_1_1detail_1_1DefaultDoCastIfPossible.html#a91348def46d438c466605c0d2644a949">corelib::detail::DefaultDoCastIfPossible::DoCastIfPossible</a></div><div class="ttdeci">static To DoCastIfPossible(From f)</div><div class="ttdef"><b>Definition</b> forwarding.hxx:116</div></div>

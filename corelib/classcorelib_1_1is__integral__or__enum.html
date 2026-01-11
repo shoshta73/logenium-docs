@@ -129,14 +129,14 @@ class corelib::is_integral_or_enum&lt; T &gt;</div><p>Type trait to check if a t
   </table>
   </dd>
 </dl>
-<h2><a class="anchor" id="autotoc_md79"></a>
+<h2><a class="anchor" id="autotoc_md89"></a>
 Member Constants</h2>
 <ul>
 <li><code>value</code>: true if T is an integral or enumeration type, false otherwise</li>
 </ul>
-<h2><a class="anchor" id="autotoc_md80"></a>
+<h2><a class="anchor" id="autotoc_md90"></a>
 Helper Variable Template</h2>
-<p><code>is_integral_or_enum_v&lt;T&gt;</code> provides a convenient way to access the value: </p><div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">b</a> = <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">is_integral_or_enum_v&lt;int&gt;</a>;  <span class="comment">// true</span></div>
+<p><code>is_integral_or_enum_v&lt;T&gt;</code> provides a convenient way to access the value: </p><div class="fragment"><div class="line"><span class="keyword">constexpr</span> <span class="keywordtype">bool</span> b = <a class="code hl_function" href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">is_integral_or_enum_v&lt;int&gt;</a>;  <span class="comment">// true</span></div>
 <div class="ttc" id="agroup__casting_html_ga21d42fef17770f4f775ad655ab85e2b8"><div class="ttname"><a href="group__casting.html#ga21d42fef17770f4f775ad655ab85e2b8">corelib::isa</a></div><div class="ttdeci">bool isa(const From &amp;Val)</div><div class="ttdoc">Checks if a value is an instance of any of the specified types.</div><div class="ttdef"><b>Definition</b> isa.hxx:64</div></div>
 </div><!-- fragment --><dl class="section note"><dt>Note</dt><dd>References are stripped before checking </dd>
 <dd>
